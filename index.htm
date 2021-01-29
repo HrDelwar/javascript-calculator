@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Calculator || Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="container">
+            <table class="first-column">
+
+                <caption>Casio</caption>
+
+                <tr>
+                    <td colspan="4"><input type="text" id="textBox" disabled placeholder="0"></td>
+                </tr>
+                <tr class="firs-row">
+                    <td class=""><button onclick="display('(')">(</button></td>
+                    <td class=""><button onclick="display(')')">)</button></td>
+                    <td class=""><button onclick="clearAll()" title="All Clear">AC</button></td>
+                    <td class=""><button onclick="backspace()" title="Backspace">&larr;</button></td>
+                </tr>
+                <tr class="firs-row">
+                    <td class=""><button onclick="display('**')" title="Power">^</button></td>
+                    <td class=""><button onclick="display('/')">÷</button></td>
+                    <td class=""><button onclick="display('*')">&times;</button></td>
+                    <td class=""><button onclick="display('-')">-</button></td>
+                </tr>
+                <tr class="second-row">
+                    <td class=""><button onclick="display('7')">7</button></td>
+                    <td class=""><button onclick="display('8')">8</button></td>
+                    <td class=""><button onclick="display('8')">9</button></td>
+                    <td class="" rowspan="2" style="height: 100%;"><button style="height:100%"
+                            onclick="display('+')">+</button></td>
+                </tr>
+                <tr class="third-row">
+                    <td class=""><button onclick="display('4')">4</button></td>
+                    <td class=""><button onclick="display('5')">5</button></td>
+                    <td class=""><button onclick="display('6')">6</button></td>
+
+                </tr>
+                <tr class="fouth-row">
+                    <td class=""><button onclick="display('1')">1</button></td>
+                    <td class=""><button onclick="display('2')">2</button></td>
+                    <td class=""><button onclick="display('3')">3</button></td>
+                    <td class="" rowspan="2" style="height: 100%;"><button style="height:100%"
+                            onclick="result()">=</button></td>
+                </tr>
+                <tr class="fifth-row">
+                    <td class="" colspan="2"><button onclick="display('0')">0</button></td>
+                    <td class=""><button onclick="display('.')">.</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
